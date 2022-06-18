@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // your function goes here. Show examples of how to use the function.
+
+        var arr = [];
+
+        var div = document.body.append(document.createElement('div'));
+
+        function getAllElements(arr, element) {
+            for (var i = 0; i < arr.length; i++) {
+                arr.push(element);
+            };
+        }
+        getAllElements(arr, div);
+
+        //// or this way
+
+        const divSelect = document.querySelectorAll("div");
+
+        getAllElements2(divSelect);
+
+        function getAllElements2(element) {
+            for (var i = 0; i < element.length; i++) {
+                console.log(element[i]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Sample page</h1>
+    <div id="row">
+        <div id="col1">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, esse laudantium corporis sint animi ducimus porro maiores aliquid consequuntur libero et, doloremque nam. Autem a veritatis sed quaerat aliquid unde!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quasi similique corporis explicabo! Aperiam tempora tenetur dolore quas ipsum facilis delectus provident debitis, sit repellendus, vel ex neque, possimus iure!</p>
+        </div>
+        <div id="col2">
+            <h2>Section 1</h2>
+            <p><a href="#">Lipsum dolor</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas praesentium natus tenetur porro labore eum illum quos voluptates quasi reprehenderit culpa id accusamus magni molestiae accusantium, expedita delectus
+                modi. Facilis!</p>
+        </div>
+    </div>
+    <footer>
+        <ul id=”bottomMenu”>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
